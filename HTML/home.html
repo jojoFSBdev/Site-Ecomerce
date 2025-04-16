@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TechDrop</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <style>
+        body {
+            background-color: var(--fundo);
+        }
+
+        .div_Header {
+            background-color: var(--primaria);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1vh 20vh;
+        }
+
+        .logo {
+            height: 10vh;
+        }
+
+        .barra_Pesquisa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: auto;
+            height: auto;
+        }
+
+        .barra_Pesquisa form{
+            display: flex;
+            align-items: center;
+            background-color: var(--fundo);
+        }
+
+        .barra_Pesquisa input {
+            border: none;
+            width: 60vh;
+            height: 5vh;
+        }
+
+        .barra_Pesquisa button{
+            width: auto;
+            height: auto;
+        }
+
+        .perfil {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 25px;
+            text-decoration: none;
+            color: var(--secundaria);
+        }
+
+        .perfil img{
+            width: 8vh;
+            border-radius: 50%;
+        }
+
+        .div_Categoria {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .div_Categoria div {
+            background-color: var(--secundaria);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 90vh;
+            justify-content: space-between;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-size: 17px;
+        }
+
+        .div_Categoria a {
+            margin: 20px 50px;
+            text-decoration: none;
+            color: var(--primaria)
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "div_Header">
+            <img class = "logo" src="../IMG/logo.png" alt="">
+            <div class = "barra_Pesquisa">
+                    <form action="">
+                        <input type="text">
+                        <button></button>
+                    </form>
+            </div>
+            <a class = "perfil" href="">
+                    <img src="../IMG/userTeste.png" alt="">
+                    Teste
+            </a>
+        </div>
+        <div class = "div_Categoria">
+            <div>
+                <a href="">CATEGORIA</a>
+                <a href="">CELULARES</a>
+                <a href="">COMPUTADORES</a>
+                <a href="">CONSOLE</a>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div>
+            <form action="">
+                <img src="../IMG/ps5_test.jpg" alt="">
+                <p class = "nome_Produto">Playstation 5</p>
+                <p class = "preço_Produto">R$ 2.500,00</p>
+            </form>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</body>
+</html>
