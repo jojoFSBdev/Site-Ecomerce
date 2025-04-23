@@ -94,6 +94,67 @@
             color: var(--primaria)
         }
 
+
+        .lista_produtos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .destaque {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            width: 1300px;
+            border-radius: 15px;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        .destaque form {
+            margin: 10px;
+            width: 180px;
+        }
+
+        .destaque img {
+            object-fit: cover;
+            height: 200px;
+            width: 180px;
+        }
+
+        .recomendado {
+            display: grid;
+            grid-template-columns: 260px 260px 260px 260px 260px;
+            grid-template-rows: 310px;
+        }
+
+        .recomendado .produto {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--secundaria);
+            max-width: 250px;
+            height: 300px;
+            border-radius: 15px;
+        }
+
+        .recomendado .produto img {
+            height: 200px;
+            object-fit:cover;
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+        .recomendado .produto p { 
+            color: var(--primaria);
+            font-size: 18px;
+        }
+
+        .recomendado .produto b {
+            color: var(--destaque);
+        }
+
     </style>
 </head>
 <body>
@@ -121,12 +182,31 @@
         </div>
     </header>
     <body>
-        <div class = "destaques">
-            <form action="">
-                <img src="../IMG/ps5_test.jpg" alt="">
-                <p class = "nome_Produto">Playstation 5</p>
-                <p class = "preço_Produto">R$ 2.500,00</p>
-            </form>
+        <div class = "lista_produtos">
+            <div class = "div_destaque">
+                <h2>Destaques</h2>
+                <div class = "destaque">
+                    <form class = "produto" action="">
+                        <img src="../IMG/ps5_test.jpg" alt="">
+                        <p class = "nome_Produto">Playstation 5</p>
+                        <p clas = "preco">R$ 2500,00</p>
+                        <p class="parcela"> em <b>10x de R$250</b></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class = "div_recomendado">
+                <h2>Recomendado</h2>
+                <div class = "recomendado">
+                    <form class = "produto" action="">
+                        <img src="../IMG/ps5_test.jpg" alt="">
+                        <p class = "nome_Produto">Playstation 5</p>
+                        <p clas = "preco">R$ 2500,00</p>
+                        <p class="parcela"> em <b>10x de R$250</b></p>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </body>
     <footer>
